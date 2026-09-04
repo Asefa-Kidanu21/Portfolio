@@ -45,6 +45,17 @@ function Hero() {
               >
                 Contact Me
               </a>
+
+            <a
+             href="/resume.pdf"
+             target="_blank"
+             rel="noopener noreferrer"
+            className="px-6 py-3 border border-gray-600 hover:border-blue-500 hover:text-blue-500 rounded-lg font-medium transition"
+            >
+           View Resume
+           </a>
+              
+              
             </div>
           </div>
 

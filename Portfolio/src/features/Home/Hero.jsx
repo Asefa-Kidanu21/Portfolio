@@ -1,5 +1,5 @@
 
-import Portfolio from '../../assets/Images/portfolio.jpg'
+import Portfolio from '../../assets/Images/Portfolio2.png';
 function Hero() {
   return (
     <section

@@ -1,20 +1,6 @@
-
+import skills from "../../data/skills";
 
 function Skills() {
-  const skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "Tailwind CSS",
-    "Node.js",
-    "Express.js",
-    "PostgreSQL",
-    "REST APIs",
-    "JWT Authentication",
-    "Git & GitHub",
-  ];
-
   return (
     <section
       id="skills"
@@ -34,19 +20,28 @@ function Skills() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
-          {skills.map((skill) => (
-            <div
-              key={skill}
-              className="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center hover:border-blue-500 hover:-translate-y-1 transition duration-300"
-            >
-              <h3 className="text-lg font-semibold text-gray-200">
-                {skill}
-              </h3>
-            </div>
-          ))}
-        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
 
+          {skills.map((skill) => {
+            const Icon = skill.icon;
+
+            return (
+              <div
+                key={skill.name}
+                className="group bg-gray-900 border border-gray-800 rounded-xl p-6 flex flex-col items-center justify-center gap-4 hover:border-blue-500 hover:-translate-y-2 transition-all duration-300"
+              >
+                {/* Icon */}
+                <Icon className="text-5xl text-blue-500 group-hover:scale-110 transition-transform duration-300" />
+
+                {/* Skill Name */}
+                <h3 className="text-lg font-semibold text-gray-200">
+                  {skill.name}
+                </h3>
+              </div>
+            );
+          })}
+
+        </div>
       </div>
     </section>
   );

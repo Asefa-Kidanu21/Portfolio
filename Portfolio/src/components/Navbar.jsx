@@ -11,7 +11,7 @@ function Navbar() {
 
         {/* Logo */}
         <a href="#home" className="text-2xl font-bold text-white">
-          Asefa<span className="text-blue-500">Kidanu</span>
+          Asefa<span className="text-blue-500"> Kidanu</span>
         </a>
 
         {/* Desktop Menu */}
